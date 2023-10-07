@@ -12,7 +12,7 @@ const frame2 = {
   transformOrigin,
 };
 
-export default {
+const bounce = {
   keyframes: [
     { ...frame1, offset: 0 },
     { ...frame1, offset: 0.2 },
@@ -40,3 +40,5 @@ export default {
   ],
   animationOptions: { duration: 1000, fill: "both" },
 };
+
+export default bounce

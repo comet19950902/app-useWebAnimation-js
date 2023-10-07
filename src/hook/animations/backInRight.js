@@ -1,4 +1,3 @@
-/* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
   keyframes: [
     { transform: "translateX(2000px) scale(0.7)", opacity: 0.7, offset: 0 },

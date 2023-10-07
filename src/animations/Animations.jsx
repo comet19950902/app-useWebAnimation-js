@@ -29,7 +29,6 @@ const Animations = () => {
         className={"custom-target"}
         ref={ref}
         onClick={play}
-        tabIndex={0}
       >
         <span role="img" aria-label="icon">
           🍿
