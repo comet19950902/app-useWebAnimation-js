@@ -1,9 +1,8 @@
 import { useRef, useEffect, useState, useCallback } from "react";
 import useLatest from "./useLatest";
 
-export const polyfillErr =
-  "💡 use-web-animations: please install polyfill to use this hook. See https://github.com/wellyshen/use-web-animations##use-polyfill";
-export const eventErr = `💡 use-web-animations: the browser doesn't support "onReady" event, please use "onUpdate" to monitor the animation's state instead. See https://github.com/wellyshen/use-web-animations#basic-usage`;
+export const polyfillErr = "use-web-animations: please install polyfill to use this hook.";
+export const eventErr = `use-web-animations: the browser doesn't support "onReady" event, please use "onUpdate"`;
 
 const useWebAnimations = ({
   ref: refOpt,

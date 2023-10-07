@@ -6,15 +6,11 @@ import useWebAnimations from "./hook";
 import * as animations from "./hook/animations";
 
 function App() {
-  const { bounce } = animations;
-  const { ref, getAnimation, animate } = useWebAnimations({
-    keyframes: bounce.keyframes,
-    animationOptions: { ...bounce.animationOptions, fill: "auto" },
+  const { flash } = animations;
+  const { ref } = useWebAnimations({
+    keyframes: flash.keyframes,
+    animationOptions: { ...flash.animationOptions, fill: "auto" }
   });
-
-  const play = () => {
-    getAnimation()?.play();
-  };
 
   return (
     <div className="App">
